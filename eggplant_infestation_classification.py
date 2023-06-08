@@ -19,6 +19,7 @@ def classify_image(img):
     probability = decode_predictions(preds, top=1)[0][0][2]
     return predicted_class, probability
 
+
 def main():
     st.title("Image Classification")
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
